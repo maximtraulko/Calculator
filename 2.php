@@ -1,7 +1,7 @@
 <html>
 	<HEAD>
 		<meta charset ="UTF-8">
-		<TITLE>Текстовый документ 00001</title>
+		<TITLE>Текстовый документ 1</title>
 	</HEAD>
 	<body>
 		<form action="2.php" method="GET">
