@@ -5,10 +5,18 @@
 	</HEAD>
 	<body>
 		<form action="2.php" method="GET">
-		<input type="text" name="arg1" value="<?=$_GET['arg1']?>" />
-		<input type="text" name="arg2" value="<?=$_GET['arg2']?>" />
-		<input type="submit" name='add' value="Сумма">
-		<input type="submit" name='sub' value="Выч">
+		<input type="text" name="arg1" value="<?php 
+			if (isset($_GET['arg1'])){
+				echo htmlspecialchars($_GET['arg1']);
+			}
+		?>">
+		<input type="text" name="arg2" value="<?php 
+			if (isset($_GET['arg2'])){
+				echo htmlspecialchars($_GET['arg2']);
+			} 
+		?>">
+		<input type="submit" value="Сумма" name="add">
+		<input type="submit" value="Вычитание" name="sub">
 		</form>
 		<?php
 			if (isset($_GET['add'])){
